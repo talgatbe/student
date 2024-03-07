@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+@font-face {
+    font-family: "CF";
+    src: url("./fonts/IntegralCF-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi-Light.ttf") format("truetype");
+}
+
+body{
+    background-color: #F2F0F1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: white;
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    font-size: 22px;
+    font-family: "CF";
+    cursor: pointer;
+}
+
+.navbar_block {
+    height: 100px;
+}
+
+.navigation{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.navigation-item{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Satoshi";
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navigation-item::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0000ff;
+    transition: 0.3s ease-in-out;
+}
+
+.navigation-item:hover::after{
+    width: 100%;
+}
+
+.search input{
+    width: 377px;
+    height: 48px;
+    background-color: #F0F0F0;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 0px 0px 0px 15px;
+}
+
+.utils{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.black-nav {
+    max-width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Satoshi";
+}
+
+.black-nav__block1 {
+    width: 100%;
+    height: auto;
+}
+
+.typography {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-nav__block2 {
+    margin-right: 100px;
+}
+
+/* Section: Hero start */
+
+.hero {
+    background: #F2F0F1;
+    width: 100%;
+    height: auto;
+}
+
+.hero__parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__item {
+    width: 50%;
+    height: auto;
+}
+
+.section__title {
+    font-size: 64px;
+    font-family: "CF";
+    line-height: 64px;
+}
+
+.section__description {
+    font-size: 16px;
+    font-family: "Satoshi";
+    margin-top: 30px;
+}
+
+.section__btn {
+    width: 210px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 60px;
+    border: none;
+    font-family: "Satoshi";
+    font-weight: 600;
+    margin: 30px 0px;
+}
+
+.parent__info_numbers {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    align-items: center;
+}
+
+.child__info_numbers {
+    margin-top: 30px;
+}
+
+.child__info_numbers h3 {
+    font-size: 40px;
+    font-family: "Satoshi";
+    font-weight: 900;
+}
+
+.child__info_numbers p {
+    font-size: 16px;
+    font-family: "Satoshi";
+    margin: 0;
+}
+/* Section: Hero end */
